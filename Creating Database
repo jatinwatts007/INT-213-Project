@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 28 21:29:56 2020
+
+@author: mayan
+"""
+
+
+import mysql.connector  
+  
+conn = mysql.connector.connect( 
+  host ="localhost", 
+  user ="cse213",
+  passwd="jatin@007"
+) 
+  
+# preparing a cursor object 
+cursorObject = conn.cursor() 
+  
+# creating database 
+cursorObject.execute("CREATE DATABASE SALEES MANAGEMENT SYSTEM")
